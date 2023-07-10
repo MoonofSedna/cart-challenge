@@ -30,8 +30,8 @@ export const ProductProvider = ({ children }: WrapperProps) => {
   const limitNum = 6;
   const order = "name";
   const [category, setCategory] = useState<number>();
-  const [loading, setLoading] = useState<boolean>(false);
-  const [count, setCount] = useState<number>(0);
+  const [loading, setLoading] = useState(false);
+  const [count, setCount] = useState(0);
 
   const [products, setProducts] = useState<Product[]>([]);
 
