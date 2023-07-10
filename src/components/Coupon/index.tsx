@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { ChangeEvent, useContext } from "react";
 // context
 import { CartContext } from "@/context/cart-context";
 // styles
@@ -14,8 +14,8 @@ export default function Coupon() {
     onCouponChange,
   } = useContext(CartContext);
 
-  const handleCouponChange = (e: Event): void =>
-    onCouponChange((e.target as HTMLInputElement).value);
+  const handleCouponChange = (e: ChangeEvent<HTMLInputElement>): void =>
+    onCouponChange(e.target.value);
 
   return (
     <C.Container>

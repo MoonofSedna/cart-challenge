@@ -1,4 +1,4 @@
-import { useContext, useMemo } from "react";
+import { ChangeEvent, useContext, useMemo } from "react";
 // components
 import Button from "../Button";
 import DefaultMessage from "../DefaultMessage";
@@ -33,7 +33,7 @@ export default function Products() {
     onPaginateProducts(query);
   };
 
-  const onFilter = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const onFilter = (e: ChangeEvent<HTMLSelectElement>) => {
     onFilterProducts(e.target.value);
   };
 
