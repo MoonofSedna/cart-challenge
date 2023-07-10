@@ -48,7 +48,7 @@ interface CartContextType {
   addProduct: (product: Product) => void;
   removeProduct: (product: Product) => void;
   isInCart: (product: string) => number;
-  applyCoupon: (coupon: string) => void;
+  applyCoupon: () => void;
 }
 
 interface DrawerContextType {

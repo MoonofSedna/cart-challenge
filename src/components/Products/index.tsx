@@ -33,7 +33,7 @@ export default function Products() {
     onPaginateProducts(query);
   };
 
-  const onFilter = (e: ChangeEvent<HTMLSelectElement>) => {
+  const onFilter = (e: ChangeEvent<HTMLInputElement>) => {
     onFilterProducts(e.target.value);
   };
 
