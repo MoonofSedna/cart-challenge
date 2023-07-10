@@ -1,0 +1,65 @@
+:root {
+  --white: #fff;
+  --black: #464545;
+  --gray: #f5f5f5;
+  --gray-200: #e4e4e4;
+  --gray-300: #bebebe;
+  --dark-gray: #616161;
+  --hero-bg: #ffbdde;
+  --primary: #ff92c9;
+  --secondary: #e23994;
+  --red: #ff0c3d;
+  --bold: 700;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(226, 57, 148, 1) 13%,
+    rgba(255, 146, 201, 1) 50%,
+    rgba(226, 57, 148, 1) 87%
+  );
+  --line-gradient: linear-gradient(
+    41deg,
+    rgba(226, 57, 148, 1) 43%,
+    rgba(255, 146, 201, 1) 80%
+  );
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray);
+  color: var(--black);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  body:has(.showCart) {
+    overflow: hidden;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
