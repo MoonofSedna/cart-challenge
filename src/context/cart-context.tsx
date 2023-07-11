@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { doc, runTransaction } from "firebase/firestore";
 // context
 import { DrawerContext } from "./drawer-context";
-import { ProductContext } from "./product.context";
+import { ProductContext } from "./product-context";
 // firebase
 import firebase from "../firebase";
 // interfaces

@@ -5,7 +5,7 @@ import DefaultMessage from "../DefaultMessage";
 import LoadingIcon from "../Icons/LoadingIcon";
 import ProductCard from "../ProductCard";
 // context
-import { ProductContext } from "@/context/product.context";
+import { ProductContext } from "@/context/product-context";
 // icons
 import All from "@/assets/icons/all.webp";
 // styles

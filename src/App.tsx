@@ -4,7 +4,7 @@ import Products from "./components/Products";
 // context
 import { DrawerProvider } from "./context/drawer-context";
 import { CartProvider } from "./context/cart-context";
-import { ProductProvider } from "./context/product.context";
+import { ProductProvider } from "./context/product-context";
 
 export default function App() {
   return (

@@ -9,7 +9,7 @@ import { Product, ProductItemProps } from "@/interfaces";
 // utils
 import { formatPrice } from "@/utils";
 
-export default function Cartproduct({ product }: ProductItemProps) {
+export default function CartItem({ product }: ProductItemProps) {
   const { checkAvailability, updateQuantity, removeProduct } =
     useContext(CartContext);
 
